@@ -9,7 +9,8 @@
             "dht11": "^0.3.6",
             "ky-016": "^2.0.5",
             "lcd1602-pcf8574a-hd44780": "^0.2.7",
-            "aliyun-iot-device-mqtt": "^0.0.5"
+            "aliyun-iot-device-mqtt": "^0.0.5",
+            "sds011": "^1.1.0"
         },
         "version": 1
     }

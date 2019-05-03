@@ -3,9 +3,9 @@ var MQTT = require('aliyun-iot-device-mqtt');
 
 // 设备身份信息
 var options = {
-    productKey: "a1reIzwVQ5w",
-    deviceName: "0UOjUFcMffM7YTjOGiv9",
-    deviceSecret: "TvJNw5M1xB8M0NaI35I3eMh88I0oueUs",
+    productKey: "替换productKey",
+    deviceName: "替换deviceName",
+    deviceSecret: "替换deviceSecret",
     regionId: "cn-shanghai",
 };
 
@@ -24,6 +24,8 @@ var reported = {
     humidity: 0,
     lightStatus: 'off',
     lightRGB: 'black',
+    pm25:0,
+    pm10:0
 }
 
 $.ready(function(error) {
@@ -52,6 +54,15 @@ $.ready(function(error) {
 
     })
 
+    //
+    $('#air').on('aqi', function(error, pm25, pm10) {
+        if (error) {
+            console.log(error);
+            return;
+        }
+        reported.pm25 = pm25;
+        reported.pm10 = pm10;
+    });
 
 });
 

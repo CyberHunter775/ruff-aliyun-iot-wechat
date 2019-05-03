@@ -157,6 +157,23 @@
                     }
                 }
             ]
+        },
+        {
+            "id": "air",
+            "model": "sds011",
+            "driver": "sds011",
+            "inputs": {
+                "uart": {
+                    "type": "uart",
+                    "args": {
+                        "baudRate": 9600,
+                        "stopBits": 1,
+                        "dataBits": 8,
+                        "parity": "none",
+                        "flowControl": "none"
+                    }
+                }
+            }
         }
     ]
 }
