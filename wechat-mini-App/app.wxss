@@ -1,0 +1,76 @@
+/**app.wxss**/
+page {
+  background-color: #f8f8f8;
+} 
+
+.container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+
+  padding: 15rpx;
+  border-top:1px solid #e5e5e5;
+} 
+
+
+.view-header {
+  display: flex;
+  flex-direction: row;
+  font-weight:bold;
+  align-items: left;
+  width: 100%;
+  padding: 10rpx;
+  border-bottom:1px solid #e5e5e5;
+}
+.view-flex-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 6rpx;
+}
+.label-device{
+  width: 300rpx;
+  font-size: 13pt;
+  align-items: center;
+  text-align: left;
+  padding: 10rpx;
+  color: gray;
+}
+.input-device {
+  width: 80%;
+  height: 100%;
+  border:none;
+  border-bottom:1rpx solid #757575;
+}
+.input-things {
+  width:100rpx;
+  height: 100%;
+  border:none;
+  border-bottom:1rpx solid #757575;
+}
+
+.label-property{
+  width: 100rpx;
+  font-size: 13pt;
+  align-items: center;
+  text-align: left;
+  padding: 10rpx;
+  color: gray;
+}
+.text-help {
+  font-size: small;
+  color: rgb(10, 194, 240);
+  padding: 20rpx;
+  position:fixed;
+  bottom:0;
+  display:flex;
+  width:100%;
+  justify-content:center;
+}

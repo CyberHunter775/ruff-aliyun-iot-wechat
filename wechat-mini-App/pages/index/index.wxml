@@ -1,0 +1,37 @@
+<!--pages/iot/dashboard.wxml-->
+<view class="container">
+
+  <ec-canvas id="mychart-dom-gauge" canvas-id="mychart-gauge" ec="{{ ec }}"></ec-canvas>
+
+  <view class="view-header">温湿度值</view>
+  <view class="view-flex-row">
+    <text class="label-property">温 度: </text>
+    <text class="label-property">{{temperature}}</text>
+    <text class="label-property">℃</text>
+  </view>
+  <view class="view-flex-row">
+    <text class="label-property">湿 度: </text>
+    <text class="label-property">{{humidity}}</text>
+    <text class="label-property">%</text>
+  </view>
+
+  <view class="view-header">LED灯</view>
+  <view style="margin:10rpx 0;"></view>
+  <view class="view-flex-row">
+    <text class="label-property">状态: </text>
+    <text class="label-property">{{lightStatus}}</text>
+  </view>
+
+  <view class="view-flex-row">
+    <text class="label-property">颜 色: </text>
+    <text class="label-property">{{lightRGB}}</text>
+  </view>
+  <view class="view-header">LED灯控制操作</view>
+  <view class="view-btns-row">
+    <button bindtap="switchLight">开/关</button>
+    <button bindtap="setRed">红色</button>
+    <button bindtap="setGreen">绿色</button>
+    <button bindtap="setBlue">蓝色</button>
+  </view>
+
+</view>

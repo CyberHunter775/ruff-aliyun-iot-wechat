@@ -1,0 +1,23 @@
+/* pages/iot/dashboard.wxss */
+
+.label-property{
+  width: 130rpx;
+  font-size: 13pt;
+  align-items: center;
+  text-align: left;
+  padding: 10rpx;
+  color: gray;
+}
+
+.view-btns-row {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  width: 100%;
+  margin: 30rpx 0;
+}
+/**index.wxss**/
+ec-canvas {
+  width: 100%;
+  height: 40%;
+}
